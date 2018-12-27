@@ -1,17 +1,17 @@
 # Project: aha-algorithms
 # Makefile created by Dev-C++ 5.11
 
-CPP      = g++.exe
-CC       = gcc.exe
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
 OBJ      = chapter_1_sort.o
 LINKOBJ  = chapter_1_sort.o
-LIBS     = -L"C:/mingw/lib" -L"C:/mingw/mingw32/lib" -static-libstdc++ -static-libgcc
+LIBS     = -L"C:/mingw/lib" -L"C:/mingw/mingw32/lib" -static-libstdc++ -static-libgcc -g3
 INCS     = -I"C:/mingw/include" -I"C:/mingw/mingw32/include" -I"C:/mingw/lib/gcc/mingw32/6.3.0/include"
 CXXINCS  = -I"C:/mingw/include" -I"C:/mingw/mingw32/include" -I"C:/mingw/lib/gcc/mingw32/6.3.0/include" -I"C:/mingw/lib/gcc/mingw32/6.3.0/include/c++"
 BIN      = aha-algorithms.exe
-CXXFLAGS = $(CXXINCS) 
-CFLAGS   = $(INCS) 
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
 RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
