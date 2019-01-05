@@ -1,2 +1,2 @@
-# aha-algorithms
+# algorithms
 aha-algorithms-segment
