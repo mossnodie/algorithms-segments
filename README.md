@@ -17,7 +17,9 @@ Learning algorithm useless, databases are done for us adding and deleting alread
 这里是我的算法仓库，同时也是算法交流仓库。日常生活中，我看过一些书后，就会将涉及到的算法发布在这个仓库，如果你有任何问题，让我知道。我们可一起去解决它。
 
 
-# 目录
+# **目录**
+
+# 啊哈！算法
 
 ## 简单桶排序（啊哈算法，第一章）
 
