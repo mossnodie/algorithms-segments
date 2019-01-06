@@ -2,58 +2,28 @@
 #include <stdlib.h>
 
 void bubble_sort(int * unordered_arr, int length){
+    //  提前结束标注
+    int flag = 0;
+    // 冒泡排序核心算法
     for (int i = 0; i < length - 1; ++i) {
+        flag = 0;
         for (int j = 0; j < length - i -1; ++j) {
             if(unordered_arr[j]>unordered_arr[j+1]) {
+                flag = 1;
                 int temp = unordered_arr[j];
                 unordered_arr[j] = unordered_arr[j + 1];
                 unordered_arr[j + 1] = temp;
             }
         }
-
+        if(!flag)
+            return; //if 若没有交换，则返回
     }
 }
-
-int main(){
-
-    // 输入缓冲区
-    char * input_buffer = (char *)malloc(sizeof(char) * 20);
-
-    scanf("%s",input_buffer);
-
-    int length = atoi(input_buffer);
-
-    int * unordered_arr = (int*)malloc(sizeof(int) * length);
-
-    scanf("%s",input_buffer);
-
-    while(*input_buffer!='\0'){
-
-        char * start = input_buffer;
-
-        int num = 0;
-
-        if(*input_buffer==' '){
-
-            input_buffer = '\0';
-
-            num = atoi(start);
-
-            *(unordered_arr) = num;
-
-            ++unordered_arr;
-
-        }
-
-        ++input_buffer;
-
-    }
-
-
-
-
- 	for (int i = 0; i < length; i++)
- 		printf("%d ", unordered_arr[i]); // for 打印结果
- 	return 0;
-
-}
+//
+//int main(){
+//
+//    int unordered_arr[1] = {1};
+//    int length = sizeof(unordered_arr)/ sizeof(*unordered_arr);
+//    bubble_sort(unordered_arr,length);
+//
+//}
