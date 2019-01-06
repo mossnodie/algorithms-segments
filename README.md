@@ -15,3 +15,29 @@ Learning algorithm useless, databases are done for us adding and deleting alread
 最后是情商，这一点我想重点的说一下，学习不是一个闭门造车的过程，只有交流才能让你学的更好，才能让你理解的更为透彻，所以和人打交道所需要的情商也是很重要的。
 
 这里是我的算法仓库，同时也是算法交流仓库。日常生活中，我看过一些书后，就会将涉及到的算法发布在这个仓库，如果你有任何问题，让我知道。我们可一起去解决它。
+
+
+# 目录
+
+## 简单桶排序（啊哈算法，第一章）
+
+简单桶排序就是开辟一个足够大空间保证了容纳你代排序数组中所有的元素，所以你需要一个待排序数组，它的长度，他的最大值。
+
+下面是我写的一个简单桶排序，它包括了对错误的处理，有一些主要注释，不理解的话你可以看着它学习一下，是一个非常健壮的算法。
+
+```c
+int *simple_buket_sort(const int *p_number_arr, int length, int max_elem)
+{
+	// 错误处理
+	if (max_elem < 0)
+		return NULL;
+	// 开辟空间
+	int *res_number_arr = (int *)malloc(sizeof(int) * (max_elem + 1));
+	// 初始化
+	memset(res_number_arr, 0, sizeof(int) * (max_elem + 1));
+	// 主要算法
+	for (int i = 0; i < length && p_number_arr[i] <= max_elem; ++i)
+		++res_number_arr[p_number_arr[i]];
+	return res_number_arr;
+}
+```
