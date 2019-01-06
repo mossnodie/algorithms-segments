@@ -27,4 +27,4 @@ Learning algorithm useless, databases are done for us adding and deleting alread
 
 下面是我写的一个简单桶排序，它包括了对错误的处理，有一些主要注释，不理解的话你可以看着它学习一下，是一个非常健壮的算法。
 
-[点击这里查看算法代码](0https://github.com/mossnodie/algorithms-segments/blob/master/aha-algorithms/aha_algorithms_chapter_1_sort.c)
+[点击这里查看算法代码](https://github.com/mossnodie/algorithms-segments/blob/master/aha-algorithms/aha_algorithms_chapter_1_sort.c)
