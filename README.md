@@ -27,19 +27,4 @@ Learning algorithm useless, databases are done for us adding and deleting alread
 
 下面是我写的一个简单桶排序，它包括了对错误的处理，有一些主要注释，不理解的话你可以看着它学习一下，是一个非常健壮的算法。
 
-```c
-int *simple_buket_sort(const int *p_number_arr, int length, int max_elem)
-{
-	// 错误处理
-	if (max_elem < 0)
-		return NULL;
-	// 开辟空间
-	int *res_number_arr = (int *)malloc(sizeof(int) * (max_elem + 1));
-	// 初始化
-	memset(res_number_arr, 0, sizeof(int) * (max_elem + 1));
-	// 主要算法
-	for (int i = 0; i < length && p_number_arr[i] <= max_elem; ++i)
-		++res_number_arr[p_number_arr[i]];
-	return res_number_arr;
-}
-```
+[点击这里查看算法代码](0https://github.com/mossnodie/algorithms-segments/blob/master/aha-algorithms/aha_algorithms_chapter_1_sort.c)

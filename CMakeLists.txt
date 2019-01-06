@@ -3,4 +3,4 @@ project(algorithms-segments)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(demo Aha-algorithms/aha_algorithms_chapter_1_sort.c)
+add_executable(demo aha-algorithms/aha_algorithms_chapter_1_sort.c)
